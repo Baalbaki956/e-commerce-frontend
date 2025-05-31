@@ -1,18 +1,81 @@
-<div class="mt-2 ml-4 flex-1 transition-all duration-200">
-    <!-- hero section -->
-    <div class="flex-1 items-center rounded-2xl bg-gradient-to-br from-[#9b87f5] to-white mb-12">
-        <div class="py-16 ">
-            <h1>Summer Collection</h1>
-            <p>Discover our new arrivals with exclusive deals and limited time offers on the season's most trending items.</p>
-            <a href="">Shop Now</a>
-            <a href="" class="flex gap-[1rem]">
-                Explore Collection
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-            </a>
-        </div>
+<div class="mt-2 ml-4 flex flex-col justify-center content-center items-center transition-all duration-200 z-0 ">
 
-        <div>
-            <img src="public/photo-1483985988355-763728e1935b.avif" alt="">
+    <div
+        class="w-[85%] h-[20%] overflow-x-hidden mt-3 rounded-xl px-4  overflow-y-hidden bg-gradient-to-br from-[#F1F0FB] to-white relative">
+        <div class="flex flex-row justify-around px-10 ">
+            <!-- hero text -->
+            <div class="flex flex-col justify-center px-10 py-10">
+                <h1 class="text-6xl font-bold mb-4">Summer <span class="text-[#9b87f5]">Collection</span></h1>
+                <p class="text-lg text-gray-600 mb-6 max-w-md">Discover our new arrivals with exclusive deals and
+                    limited time offers on the season's most trending items.</p>
+
+                <div class="flex flex-row gap-[1rem]">
+                    <a href=""
+                        class="rounded-md text-sm font-medium bg-[#9b87f5] hover:bg-[#7e69ab] text-white py-2 px-6 rouned-md">Shop
+                        Now</a>
+                    <a href=""
+                        class="rounded-md text-sm font-medium text-[#9b87f5] hover:text-[#0f172a] hover:bg-[#f1f0fb] py-2 px-6 rouned-md border border-[#9b87f5]">Explore
+                        Collection</a>
+                </div>
+            </div>
+
+            <!-- hero Image -->
+            <div class="w-1/2 py-10">
+                <img class="rounded-lg shadow-xl" src="photo-1483985988355-763728e1935b.avif" alt="">
+            </div>
+
+            <div class="absolute -left-20 -top-20 w-56 h-56 bg-[#f973161a] rounded-full blur-xl z-2"></div>
+            <div class="absolute -right-32 -bottom-32 w-64 h-64 bg-[#9b87f51a] rounded-full blur-xl z-2"></div>
         </div>
     </div>
+
+    <div class="w-[85%] h-[20%] overflow-x-hidden mt-12">
+        <h1 class="text-[1.5rem] font-[700]">Featured Products</h1>
+
+        <div class="flex flex-row justify-between">
+            <p class="text-[#4b5563]">Handpicked by our experts</p>
+            <a href="" class="text-[#9b87f5] hover:underline">View All</a>
+        </div>
+        
+        <!-- Modified cards container -->
+        <div class="mt-4 w-full flex flex-row gap-[2.5rem]">
+            <div class="flex-1 min-w-0">  <!-- Each card takes equal space -->
+                <app-card class="w-full h-full" />  <!-- Card fills its container -->
+            </div>
+            <div class="flex-1 min-w-0">
+                <app-card class="w-full h-full" />
+            </div>
+            <div class="flex-1 min-w-0">
+                <app-card class="w-full h-full" />
+            </div>
+            <div class="flex-1 min-w-0">
+                <app-card class="w-full h-full" />
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[85%] h-[20%] overflow-x-hidden mt-12">
+    <h1 class="text-[1.5rem] font-[700]">Latest Products</h1>
+
+    <div class="flex flex-row justify-between">
+        <p class="text-[#4b5563]">Handpicked by our experts</p>
+        <a href="" class="text-[#9b87f5] hover:underline">View All</a>
+    </div>
+    
+    <!-- Modified cards container -->
+    <div class="mt-4 w-full flex flex-row gap-[2.5rem]">
+        <div class="flex-1 min-w-0">  <!-- Each card takes equal space -->
+            <app-card class="w-full h-full" />  <!-- Card fills its container -->
+        </div>
+        <div class="flex-1 min-w-0">
+            <app-card class="w-full h-full" />
+        </div>
+        <div class="flex-1 min-w-0">
+            <app-card class="w-full h-full" />
+        </div>
+        <div class="flex-1 min-w-0">
+            <app-card class="w-full h-full" />
+        </div>
+    </div>
+</div>
 </div>

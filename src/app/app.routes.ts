@@ -4,6 +4,8 @@ import { ProductsComponent } from './features/products/products.component';
 import { CategoriesComponent } from './features/categories/categories.component';
 import { WishlistComponent } from './features/wishlist/wishlist.component';
 import { CartComponent } from './features/cart/cart.component';
+import { AccountComponent } from './features/account/account.component';
+import { SettingsComponent } from './features/settings/settings.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +27,13 @@ export const routes: Routes = [
     {
         path: "cart",
         component: CartComponent
+    },
+    {
+        path: "account",
+        component: AccountComponent
+    },
+    {
+        path: "settings",
+        component: SettingsComponent
     }
 ];

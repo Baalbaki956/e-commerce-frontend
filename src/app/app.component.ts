@@ -10,7 +10,7 @@ import { HeaderComponent } from "./shared/header/header.component";
     <app-header />
     <app-sidebar />
 
-    <main class="fixed left-[255px] top-[73px] w-[calc(100vw-250px)] h-[calc(100vh-73px)] overflow-auto mt-2 ml-4">
+    <main class="fixed left-[255px] top-[73px] w-[calc(100vw-250px)] h-[calc(100vh-73px)] overflow-auto overflow-x-hidden ml-[1px] bg-gray-50">
       <router-outlet />
     </main>
     
