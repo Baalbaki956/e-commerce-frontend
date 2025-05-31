@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Category } from '../../models/category.model';
+import { CardComponent } from "../../core/components/card/card.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, CardComponent],
   templateUrl: 'home.component.html',
   styles: ``
 })
