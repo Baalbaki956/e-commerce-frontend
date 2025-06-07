@@ -3,11 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-electronics',
   imports: [],
-  template: `
-    <p>
-      electronics works!
-    </p>
-  `,
+  templateUrl: 'electronics.component.html',
   styles: ``
 })
 export class ElectronicsComponent {

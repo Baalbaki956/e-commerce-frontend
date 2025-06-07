@@ -3,11 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-clothing',
   imports: [],
-  template: `
-    <p>
-      clothing works!
-    </p>
-  `,
+  templateUrl: 'clothing.component.html',
   styles: ``
 })
 export class ClothingComponent {

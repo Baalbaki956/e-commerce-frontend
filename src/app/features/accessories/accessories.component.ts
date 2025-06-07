@@ -3,11 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-accessories',
   imports: [],
-  template: `
-    <p>
-      accessories works!
-    </p>
-  `,
+  templateUrl: 'accessories.component.html',
   styles: ``
 })
 export class AccessoriesComponent {
