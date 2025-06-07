@@ -1,17 +1,145 @@
-<div class="container mx-auto p-4 md:p-6">
+<div class="container mx-auto px-20 py-6 md:px-20 md:py-8">
     <div class="mb-6">
         <h1 class="text-3xl font-bold flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
-            fill="currentColor">
+                fill="currentColor">
                 <path
                     d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
             </svg>
-            Shopping Cart</h1>
 
-        <p class="text-gray-600">Review and manage your items</p>
+            Shopping Cart
+        </h1>
+        <p>Review and manage your items</p>
     </div>
 
-    <div class="">
-        
+    <!-- Cart Item Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+            <div class="bg-white rounded-lg border border-gray-300 shadow-sm">
+                <div class="p-6">
+                    <div class="flex justify-between text-sm font-medium text-gray-500 mb-4">
+                        <span>Item</span>
+                        <div class="flex gap-16">
+                            <span>Quantity</span>
+                            <span>Price</span>
+                        </div>
+                    </div>
+
+                        <div class="py-4 border-t border-gray-300">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-4">
+                                    <img class="h-16 w-16 rounded-md object-cover border border-gray-200" src="./placeholder.svg"
+                                        alt="">
+                                    <div>
+                                        <h3 class="font-medium text-gray-800">Premium Headphones</h3>
+                                        <p class="text-sm text-gray-500">Item #1</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-16">
+                                    <div class="flex items-center gap-2">
+                                        <select class="w-16 rounded-md border border-gray-200 p-1" name="" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <button class="text-red-500 hover:text-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash2 h-4 w-4"
+                                                data-lov-id="src/pages/Cart.tsx:67:28" data-lov-name="Trash2"
+                                                data-component-path="src/pages/Cart.tsx" data-component-line="67"
+                                                data-component-file="Cart.tsx" data-component-name="Trash2"
+                                                data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
+                                                <path d="M3 6h18"></path>
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                                <line x1="10" x2="10" y1="11" y2="17"></line>
+                                                <line x1="14" x2="14" y1="11" y2="17"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="font-medium">
+                                        $ 149.99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4 border-t border-gray-300">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-4">
+                                    <img class="h-16 w-16 rounded-md object-cover border border-gray-200" src="./placeholder.svg"
+                                        alt="">
+                                    <div>
+                                        <h3 class="font-medium text-gray-800">Wireless Keyboard</h3>
+                                        <p class="text-sm text-gray-500">Item #2</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-16">
+                                    <div class="flex items-center gap-2">
+                                        <select class="w-16 rounded-md border border-gray-200 p-1" name="" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <button class="text-red-500 hover:text-red-700">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-trash2 h-4 w-4"
+                                                data-lov-id="src/pages/Cart.tsx:67:28" data-lov-name="Trash2"
+                                                data-component-path="src/pages/Cart.tsx" data-component-line="67"
+                                                data-component-file="Cart.tsx" data-component-name="Trash2"
+                                                data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
+                                                <path d="M3 6h18"></path>
+                                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                                                <line x1="10" x2="10" y1="11" y2="17"></line>
+                                                <line x1="14" x2="14" y1="11" y2="17"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="font-medium">
+                                        $ 149.99
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Sumarry -->
+         <div>
+            <div class="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+                <h2 class="text-lg font-medium mb-4">Order Summary</h2>
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Subtotal</span>
+                        <span class="font-medium">$ 269.97</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Shipping</span>
+                        <span class="font-medium">$ 10.00</span>
+                    </div>
+                    <div class="shrink-0 border border-gray-200 h-[0.5px] w-full my-2"></div>
+                    <div class="flex justify-between text-base font-medium">
+                        <span class="text-gray-600">Total</span>
+                        <span class="font-medium">$ 279.97</span>
+                    </div>
+                </div>
+
+                <a routerLink="checkout" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary-foreground h-10 px-4 py-2 w-full mt-6 text-white bg-[#9b87f5] hover:bg-[#1a1f2c]">Checkout
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-4 w-4">
+                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                </svg></a>
+            </div>
+         </div>
     </div>
 </div>
