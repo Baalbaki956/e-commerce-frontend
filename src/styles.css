@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+.active-link {
+  @apply text-[#9b87f5] bg-[#f1f0fb];
+}

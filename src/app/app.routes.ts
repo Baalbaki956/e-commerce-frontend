@@ -13,7 +13,7 @@ export const routes: Routes = [
         component: HomeComponent
     },
     {
-        path: "products",
+        path: "all",
         component: ProductsComponent
     },
     {
@@ -27,6 +27,10 @@ export const routes: Routes = [
     {
         path: "cart",
         component: CartComponent
+    },
+    {
+        path: "cart/checkout",
+        component: SettingsComponent
     },
     {
         path: "account",
