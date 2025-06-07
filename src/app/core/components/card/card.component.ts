@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: 'card.component.html',
   styles: ``
 })
@@ -12,4 +13,5 @@ export class CardComponent {
   @Input() title: string = 'Modern Backpack';
   @Input() description: string = 'Accessories';
   @Input() price: number = 50;
+  @Input() isWishlist: boolean = false;
 }

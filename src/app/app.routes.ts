@@ -6,6 +6,10 @@ import { WishlistComponent } from './features/wishlist/wishlist.component';
 import { CartComponent } from './features/cart/cart.component';
 import { AccountComponent } from './features/account/account.component';
 import { SettingsComponent } from './features/settings/settings.component';
+import { ElectronicsComponent } from './features/electronics/electronics.component';
+import { AccessoriesComponent } from './features/accessories/accessories.component';
+import { ClothingComponent } from './features/clothing/clothing.component';
+import { HomelivingComponent } from './features/homeliving/homeliving.component';
 
 export const routes: Routes = [
     {
@@ -15,6 +19,22 @@ export const routes: Routes = [
     {
         path: "all",
         component: ProductsComponent
+    },
+    {
+        path: "electronics",
+        component: ElectronicsComponent
+    },
+    {
+        path: "accessories",
+        component: AccessoriesComponent
+    },
+    {
+        path: "clothing",
+        component: ClothingComponent
+    },
+    {
+        path: "homeliving",
+        component: HomelivingComponent
     },
     {
         path: "categories",

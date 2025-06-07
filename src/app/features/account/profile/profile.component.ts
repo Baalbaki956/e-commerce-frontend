@@ -3,11 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-profile',
   imports: [],
-  template: `
-    <p>
-      profile works!
-    </p>
-  `,
+  templateUrl: 'profile.component.html',
   styles: ``
 })
 export class ProfileComponent {
