@@ -1,19 +1,122 @@
 <div class="container mx-auto px-20 py-6 md:px-20 md:py-8">
     <div class="mb-6">
         <h1 class="text-3xl font-bold flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="currentColor"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
-            Settings</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                fill="currentColor">
+                <path
+                    d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+            </svg>
+            Settings
+        </h1>
 
         <p class="text-gray-600">Manage your preferences</p>
     </div>
 
     <div class="bg-white rounded-lg shadow-sm">
         <div class="w-full">
-            <div style="outline: none;">
-                <div class="bg-white rounded-lg shadow-sm p-4 m-full mx-auto ">
-                    <h1>Account Preferences</h1>
+            <div class="bg-white rounded-lg shadow-sm p-4 m-full mx-auto ">
+                <h1 class="text-xl font-medium mb-4">Account Preferences</h1>
+
+                <div class="max-w-2xl mb-4"> <!-- center container with max width -->
+                    <div class="flex items-center justify-between w-full">
+                        <label class="text-sm font-medium" for="mode">Dark Mode</label>
+                        <label class="inline-flex relative items-center cursor-pointer">
+                            <input type="checkbox" id="mode" name="mode" value="" class="sr-only peer" />
+                            <div
+                                class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#9b87f5] transition-colors duration-300">
+                            </div>
+                            <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow
+                                peer-checked:translate-x-full peer-checked:border-[#9b87f5]
+                                transition-transform duration-300"></div>
+                        </label>
+                    </div>
+                    <p class="text-sm text-gray-500">Use dark theme across the application</p>
                 </div>
 
+                <div class="max-w-2xl"> <!-- center container with max width -->
+                    <div class="flex items-center justify-between w-full">
+                        <label class="text-sm font-medium" for="language">Language</label>
+                        <div>
+                            <div class="max-w-2xl relative">
+                                <label for="dropdown-toggle"
+                                    class="inline-flex justify-between items-center cursor-pointer bg-white px-3 py-2 rounded-md shadow ring-1 ring-gray-300 hover:bg-gray-50 w-full text-sm font-semibold text-gray-900">
+                                    English
+                                    <svg class="ml-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M5.22 8.22a.75.75 0 011.06 0L10 11.94l3.72-3.72a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.22 9.28a.75.75 0 010-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+                                <div class="hidden peer-checked:block absolute left-1/2 mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none
+                                    -translate-x-1/2 transform" role="menu">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">English</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">Arabic</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                        role="menuitem">French</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shrink-0 border border-gray-200 h-[1px] my-2 mt-8"></div>
+
+                    <div class="max-w-2xl mb-4"> <!-- center container with max width -->
+                        <div class="flex items-center justify-between w-full">
+                            <label class="text-sm font-medium" for="mode">Email Notifications</label>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" id="mode" name="mode" value="" class="sr-only peer" />
+                                <div
+                                    class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#9b87f5] transition-colors duration-300">
+                                </div>
+                                <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow
+                                peer-checked:translate-x-full peer-checked:border-[#9b87f5]
+                                transition-transform duration-300"></div>
+                            </label>
+                        </div>
+                        <p class="text-sm text-gray-500">Receive emails about your account activity</p>
+                    </div>
+
+
+                    <div class="max-w-2xl mb-4"> <!-- center container with max width -->
+                        <div class="flex items-center justify-between w-full">
+                            <label class="text-sm font-medium" for="mode">Marketing Emails</label>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" id="mode" name="mode" value="" class="sr-only peer" />
+                                <div
+                                    class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#9b87f5] transition-colors duration-300">
+                                </div>
+                                <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow
+                                peer-checked:translate-x-full peer-checked:border-[#9b87f5]
+                                transition-transform duration-300"></div>
+                            </label>
+                        </div>
+                        <p class="text-sm text-gray-500">Receive emails about new products and offers</p>
+                    </div>
+
+
+                    <div class="max-w-2xl mb-4"> <!-- center container with max width -->
+                        <div class="flex items-center justify-between w-full">
+                            <label class="text-sm font-medium" for="mode">Order Updates</label>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" id="mode" name="mode" value="" class="sr-only peer" />
+                                <div
+                                    class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#9b87f5] transition-colors duration-300">
+                                </div>
+                                <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow
+                                peer-checked:translate-x-full peer-checked:border-[#9b87f5]
+                                transition-transform duration-300"></div>
+                            </label>
+                        </div>
+                        <p class="text-sm text-gray-500">Receive notifications about your order status</p>
+                    </div>
+
+                    <div class="mt-10">
+                        <button routerLink="" class="bg-[#9b87f5] text-white gap-2 rounded-md text-sm font-medium h-10 px-4 py-2 cursor-pointer">Save Changes</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
