@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CardComponent } from "../../core/components/card/card.component";
 
 @Component({
   selector: 'app-clothing',
-  imports: [],
+  imports: [CardComponent],
   templateUrl: 'clothing.component.html',
   styles: ``
 })

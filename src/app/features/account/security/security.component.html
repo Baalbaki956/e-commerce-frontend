@@ -1,0 +1,66 @@
+<div class="max-w-2xl">
+    <div class="flex flex-col gap-6">
+        <h1 class="text-2xl font-medium mb-4">Change Password</h1>
+
+        <div class="flex gap-6">
+            <div class="w-full">
+                <label for="curr_password" class="block text-sm/6 font-medium text-gray-900">Current Password</label>
+                <div class="mt-2">
+                    <div
+                        class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                        <input type="text" name="curr_password" id="curr_password" value=""
+                            class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-6">
+            <div class="w-full">
+                <label for="new_password" class="block text-sm/6 font-medium text-gray-900">New Password</label>
+                <div class="mt-2">
+                    <div
+                        class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                        <input type="text" name="new_password" id="new_password" value=""
+                            class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-6">
+            <div class="w-full">
+                <label for="confirm_password" class="block text-sm/6 font-medium text-gray-900">Confirm New
+                    Password</label>
+                <div class="mt-2">
+                    <div
+                        class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                        <input type="text" name="confirm_password" id="confirm_password" value=""
+                            class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-2">
+            <button routerLink=""
+                class="bg-[#9b87f5] text-white gap-2 rounded-md text-sm font-medium h-10 px-4 py-2 cursor-pointer">Change
+                Password</button>
+        </div>
+    </div>
+</div>
+
+<button routerLink=""
+    class="absolute mt-12 left-36 items-center bg-white justify-center inline-flex gap-2 rounded-md text-sm font-medium border bg-background h-10 px-4 py-2 text-red-500 hover:text-red-600 hover:bg-red-50 border-red-200 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-log-out mr-2 h-4 w-4" data-lov-id="src/pages/Profile.tsx:331:14"
+        data-lov-name="LogOut" data-component-path="src/pages/Profile.tsx" data-component-line="331"
+        data-component-file="Profile.tsx" data-component-name="LogOut"
+        data-component-content="%7B%22className%22%3A%22mr-2%20h-4%20w-4%22%7D">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+        <polyline points="16 17 21 12 16 7"></polyline>
+        <line x1="21" x2="9" y1="12" y2="12"></line>
+    </svg>
+    Sign Out
+</button>

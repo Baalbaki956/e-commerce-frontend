@@ -17,12 +17,12 @@
             <div style="outline: none;">
                 <div class="bg-white rounded-lg shadow-sm p-4 m-full mx-auto ">
                     <div role="tablist" aria-label="Tabs example" class="flex border-b border-gray-200">
-                        <button 
-                            (click)="selectTab('profile')" 
-                            [class.border-b-2]="activeTab === 'profile'"
-                            [class.border-purple-300]="activeTab === 'profile'"
+                        <button
+                            (click)="selectTab('personal_info')" 
+                            [class.border-b-2]="activeTab === 'personal_info'"
+                            [class.border-purple-300]="activeTab === 'personal_info'"
                             class="cursor-pointer px-4 py-2 focus:outline-none">
-                            Profile</button>
+                            Personal Info</button>
                         <button 
                             (click)="selectTab('orders')" 
                             [class.border-b-2]="activeTab === 'orders'"
@@ -31,12 +31,16 @@
                         <button (click)="selectTab('wishlist')" [class.border-b-2]="activeTab === 'wishlist'"
                             [class.border-purple-300]="activeTab === 'wishlist'"
                             class="cursor-pointer px-4 py-2 focus:outline-none">Wishlist</button>
+                        <button (click)="selectTab('security')" [class.border-b-2]="activeTab === 'security'"
+                            [class.border-purple-300]="activeTab === 'security'"
+                            class="cursor-pointer px-4 py-2 focus:outline-none">Security</button>
                     </div>
 
                     <div class="p-4">
-                        <app-profile *ngIf="activeTab === 'profile'"></app-profile>
+                        <app-profile *ngIf="activeTab === 'personal_info'"></app-profile>
                         <app-orders *ngIf="activeTab === 'orders'"></app-orders>
                         <app-wishlist *ngIf="activeTab === 'wishlist'"></app-wishlist>
+                        <app-security *ngIf="activeTab === 'security'"></app-security>
                     </div>
                 </div>
 
